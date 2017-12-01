@@ -90,8 +90,8 @@ You can find the roles
 [here](https://github.com/danieljaouen/ansible-dotfiles) .  Clone them like so:
 ```
 mkdir -p ~/.ansible.d/roles
-git clone https://github.com/danieljaouen/ansible-base-osx ~/.ansible.d/roles/base_osx
-git clone https://github.com/danieljaouen/ansible-dotfiles ~/.ansible.d/roles/dotfiles
+git submodule add https://github.com/danieljaouen/ansible-base-osx ~/.ansible.d/roles/base_osx
+git submodule add https://github.com/danieljaouen/ansible-dotfiles ~/.ansible.d/roles/dotfiles
 ```
 
 Then I run the `~/.ansible.d/site.yml` playbook by running:
