@@ -21,7 +21,7 @@ discover the "old_path" (as in, `ln -s old_path new_path`).
 The Rakefile contains a function `file_listing` which takes an `end_pattern` in
 as an argument and returns a dictionary of a file's `old_path` and `new_path`.
 The Rakefile also has a function called `current_path` which takes a `link`
-dictioary returned by `file_listing` and returns a dictionary containing the
+dictionary returned by `file_listing` and returns a dictionary containing the
 `type`, `path`, `old_path`, and `new_path`. This function returns values
 depending on whether or not `f[:new_path]` already exists on disk. We also have
 functions called `directory_listing`, `locals_listing`, and `dotfile_listing`
